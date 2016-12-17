@@ -168,6 +168,7 @@ chmod +x $BIN_PATH"/git_diff_wrapper"
 echo "Done."
 
 echo -n "Configure git in user scope..."
+git config --global core.editor "vim"
 git config --global diff.external "git_diff_wrapper"
 git config --global diff.tool "vimdiff"
 git config --global pager.diff ""
